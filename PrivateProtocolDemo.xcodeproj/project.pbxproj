@@ -15,6 +15,8 @@
 		06F7B760240CFA2F00E1EAD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06F7B75E240CFA2F00E1EAD7 /* LaunchScreen.storyboard */; };
 		06F7B763240CFA2F00E1EAD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F7B762240CFA2F00E1EAD7 /* main.m */; };
 		06F7B76D240CFA2F00E1EAD7 /* PrivateProtocolDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F7B76C240CFA2F00E1EAD7 /* PrivateProtocolDemoUITests.m */; };
+		06F7B778240CFAF400E1EAD7 /* StartImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 06F7B777240CFAF300E1EAD7 /* StartImage.png */; };
+		06F7B77B240CFCC600E1EAD7 /* PrivacyProcessingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F7B77A240CFCC600E1EAD7 /* PrivacyProcessingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,9 @@
 		06F7B768240CFA2F00E1EAD7 /* PrivateProtocolDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrivateProtocolDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06F7B76C240CFA2F00E1EAD7 /* PrivateProtocolDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateProtocolDemoUITests.m; sourceTree = "<group>"; };
 		06F7B76E240CFA2F00E1EAD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06F7B777240CFAF300E1EAD7 /* StartImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartImage.png; sourceTree = "<group>"; };
+		06F7B779240CFCC600E1EAD7 /* PrivacyProcessingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivacyProcessingView.h; sourceTree = "<group>"; };
+		06F7B77A240CFCC600E1EAD7 /* PrivacyProcessingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivacyProcessingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,12 +89,15 @@
 		06F7B74F240CFA2E00E1EAD7 /* PrivateProtocolDemo */ = {
 			isa = PBXGroup;
 			children = (
+				06F7B777240CFAF300E1EAD7 /* StartImage.png */,
 				06F7B750240CFA2E00E1EAD7 /* AppDelegate.h */,
 				06F7B751240CFA2E00E1EAD7 /* AppDelegate.m */,
 				06F7B753240CFA2E00E1EAD7 /* SceneDelegate.h */,
 				06F7B754240CFA2E00E1EAD7 /* SceneDelegate.m */,
 				06F7B756240CFA2E00E1EAD7 /* ViewController.h */,
 				06F7B757240CFA2E00E1EAD7 /* ViewController.m */,
+				06F7B779240CFCC600E1EAD7 /* PrivacyProcessingView.h */,
+				06F7B77A240CFCC600E1EAD7 /* PrivacyProcessingView.m */,
 				06F7B759240CFA2E00E1EAD7 /* Main.storyboard */,
 				06F7B75C240CFA2F00E1EAD7 /* Assets.xcassets */,
 				06F7B75E240CFA2F00E1EAD7 /* LaunchScreen.storyboard */,
@@ -190,6 +198,7 @@
 			files = (
 				06F7B760240CFA2F00E1EAD7 /* LaunchScreen.storyboard in Resources */,
 				06F7B75D240CFA2F00E1EAD7 /* Assets.xcassets in Resources */,
+				06F7B778240CFAF400E1EAD7 /* StartImage.png in Resources */,
 				06F7B75B240CFA2E00E1EAD7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +221,7 @@
 				06F7B752240CFA2E00E1EAD7 /* AppDelegate.m in Sources */,
 				06F7B763240CFA2F00E1EAD7 /* main.m in Sources */,
 				06F7B755240CFA2E00E1EAD7 /* SceneDelegate.m in Sources */,
+				06F7B77B240CFCC600E1EAD7 /* PrivacyProcessingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 467E4PZSHX;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PrivateProtocolDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -385,7 +395,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 467E4PZSHX;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PrivateProtocolDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
