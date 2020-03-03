@@ -56,8 +56,11 @@
 
 - (void)confirmBtnClick {
     [self removeFromSuperview];
-//    self = nil;
-    //  [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    [userDefault setObject:@"1" forKey:@"AgreePrivacy"];
+    [userDefault synchronize];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 }
 
 - (void)cancelBtnClick {

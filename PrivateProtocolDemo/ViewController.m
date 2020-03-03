@@ -31,7 +31,17 @@
 //    } else {
 //      [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
 //    }
-    [self.view addSubview:self.privacyView];
+
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    NSString *agreePrivacy = [userDefault objectForKey:@"AgreePrivacy"];
+    if (!agreePrivacy || agreePrivacy.intValue < 1) {
+      [self.view addSubview:self.privacyView];
+      if (@available(iOS 13.0, *)) {
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDarkContent animated:NO];
+      } else {
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+      }
+    }
 }
 
 - (PrivacyProcessingView *)privacyView {
